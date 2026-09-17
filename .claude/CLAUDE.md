@@ -3,6 +3,9 @@
 Universal rules for any code written in this repo. Keep additions here short — this
 file is loaded into context on every session, so every line costs tokens.
 
+Detailed rule sets live in `.claude/rules/` and are pulled in by the imports at the
+bottom of this file.
+
 ## Naming
 
 - Names describe **what a thing is or does**, never how it's implemented.
@@ -85,3 +88,7 @@ Run through this before opening a PR, and again when reviewing one.
 - [ ] Public functions have a docstring covering arguments, return shape, and
       failure modes.
 - [ ] The diff is scoped to one concern; unrelated refactors go in their own PR.
+
+## Imports
+
+@.claude/rules/testing.md
